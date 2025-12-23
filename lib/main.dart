@@ -10,10 +10,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenwidth = MediaQuery.of(context).size.width;
+    final screenheight = MediaQuery.of(context).size.height;
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: HomePage(),
+      home: Scaffold(
+        body: Column(
+          children: [Text("Text Scaffold: " + screenwidth.toString())],
+        ),
+      ),
     );
   }
 }
