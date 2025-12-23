@@ -10,6 +10,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    // get screen size info
+
+    return const Scaffold(body: Column(children: [Text("Text Scaffold: ")]));
   }
 }
