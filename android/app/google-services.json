@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "662929013582",
+    "firebase_url": "https://abdulrahmanabusnena-70718-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "abdulrahmanabusnena-70718",
+    "storage_bucket": "abdulrahmanabusnena-70718.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662929013582:android:700409db79b5d9cf9cbc1f",
+        "android_client_info": {
+          "package_name": "com.example.e_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmkyEHYEuKGeNcHet-QMk0fj8OvyBBcX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
