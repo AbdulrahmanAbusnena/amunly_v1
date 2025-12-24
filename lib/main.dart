@@ -1,4 +1,3 @@
-import 'package:e_tracker/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(useMaterial3: true),
       home: Scaffold(
         body: Column(
-          children: [Text("Text Scaffold: " + screenwidth.toString())],
+          children: [Text("Text Scaffold: $screenwidth")],
         ),
       ),
     );
