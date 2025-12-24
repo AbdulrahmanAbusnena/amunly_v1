@@ -1,5 +1,6 @@
 import 'package:e_tracker/firebase_options.dart';
 import 'package:e_tracker/pages/homepage.dart';
+import 'package:e_tracker/pages/landingpage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: HomePage(),
+      home: Landingpage(),
     );
   }
 }
