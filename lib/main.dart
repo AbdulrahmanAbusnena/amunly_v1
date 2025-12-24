@@ -1,6 +1,4 @@
 import 'package:e_tracker/firebase_options.dart';
-import 'package:e_tracker/pages/homepage.dart';
-import 'package:e_tracker/pages/landingpage.dart';
 import 'package:e_tracker/util/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
