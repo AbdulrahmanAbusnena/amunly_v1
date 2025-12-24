@@ -6,7 +6,6 @@ import 'package:e_tracker/pages/landingpage.dart';
 import 'package:e_tracker/pages/registration.dart/login_page.dart';
 import 'package:e_tracker/pages/registration.dart/signup_page.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter/material.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: [
