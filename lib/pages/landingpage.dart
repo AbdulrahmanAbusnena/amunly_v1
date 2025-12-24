@@ -14,7 +14,7 @@ class _LandingpageState extends State<Landingpage> {
     return LayoutBuilder(
       builder: (context, constraints) {
         // Web
-        if (constraints.maxWidth > 600) {
+        if (constraints.maxWidth > 800) {
           return Scaffold(
             body: Container(
               padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
@@ -23,7 +23,7 @@ class _LandingpageState extends State<Landingpage> {
                 children: [
                   Row(
                     children: [
-                      Image.asset('assets/amly-logo.png', height: 40),
+                      Image.asset('assets/amly_logo.png', height: 40),
                       SizedBox(width: 10),
                       Text(
                         'MUN Conference',
