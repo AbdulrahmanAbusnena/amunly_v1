@@ -1,3 +1,4 @@
+import 'package:e_tracker/items/googlebutton.dart';
 import 'package:e_tracker/items/underlinedbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -47,7 +48,14 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 10),
+
+                    SizedBox(height: 20),
+                    GoogleButton(
+                      text: 'text',
+                      ontap: () {
+                        context.go('');
+                      },
+                    ),
                   ],
                 ),
               ),
