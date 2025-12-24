@@ -21,15 +21,19 @@ class _NavItemState extends State<NavItem> {
       onExit: (_) => setState(() => isHovered = false),
       child: GestureDetector(
         onTap: widget.onTap,
-        child: Text(
-          widget.title,
+        child: AnimatedDefaultTextStyle(
+          duration: const Duration(milliseconds: 150),
           style: GoogleFonts.roboto(
-            fontSize: 16,
-            color: isHovered ? Colors.blue : Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            color: isHovered
+                ? const Color(0xFF60A5FA)
+                : const Color(0xFF0D0662),
             decoration: isHovered
                 ? TextDecoration.underline
                 : TextDecoration.none,
           ),
+          child: Text(widget.title),
         ),
       ),
     );
