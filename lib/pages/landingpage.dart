@@ -23,10 +23,10 @@ class _LandingpageState extends State<Landingpage> {
                 children: [
                   Row(
                     children: [
-                      Image.asset('assets/amly_logo.png', height: 40),
+                      Image.asset('asset/close.png', height: 40),
                       SizedBox(width: 10),
                       Text(
-                        'MUN Conference',
+                        'AMUNLY',
                         style: GoogleFonts.mooli(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
