@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Landingpage extends StatefulWidget {
   const Landingpage({super.key});
@@ -14,7 +15,29 @@ class _LandingpageState extends State<Landingpage> {
       builder: (context, constraints) {
         // Web
         if (constraints.maxWidth > 600) {
-          return Scaffold();
+          return Scaffold(
+            body: Container(
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Image.asset('assets/amly-logo.png', height: 40),
+                      SizedBox(width: 10),
+                      Text(
+                        'MUN Conference',
+                        style: GoogleFonts.mooli(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
         }
         // Mobile
         else {
