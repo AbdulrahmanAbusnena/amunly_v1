@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     // get screen size info
 
-    return const Scaffold(body: Column(children: [Text("Text Scaffold: ")]));
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 600) {
+          return Scaffold(body: Center(child: Text("Hey there")));
+        } else {
+          return Scaffold(body: Center());
+        }
+      },
+    );
   }
 }
