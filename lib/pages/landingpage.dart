@@ -17,18 +17,18 @@ class _LandingpageState extends State<Landingpage> {
         if (constraints.maxWidth > 800) {
           return Scaffold(
             body: Container(
-              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                     children: [
-                      Image.asset('asset/close.png', height: 40),
+                      Image.asset("assets/amly.png", width: 70),
                       SizedBox(width: 10),
                       Text(
                         'AMUNLY',
-                        style: GoogleFonts.mooli(
-                          fontSize: 24,
+                        style: GoogleFonts.montserratSubrayada(
+                          fontSize: 35,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
