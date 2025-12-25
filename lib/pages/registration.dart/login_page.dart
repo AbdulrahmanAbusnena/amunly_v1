@@ -130,9 +130,9 @@ class _LoginPageState extends State<LoginPage> {
                         context.go('/'); // change if needed
                       },
                       child: Image.asset(
-                        'assets/your_image.png',
-                        width: 40,
-                        height: 40,
+                        'assets/close.png',
+                        width: 30,
+                        height: 30,
                       ),
                     ),
                   ),
