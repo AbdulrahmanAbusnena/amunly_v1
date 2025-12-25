@@ -112,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                         SizedBox(height: 10),
                         Emailbutton(
                           onTap: () {
-                            context.goNamed('/');
+                            context.go('/loginemail');
                           },
                           text: 'Login with email',
                         ),
