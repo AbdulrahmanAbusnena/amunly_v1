@@ -4,6 +4,7 @@ import 'package:e_tracker/pages/contact.dart';
 import 'package:e_tracker/pages/homepage.dart';
 import 'package:e_tracker/pages/landingpage.dart';
 import 'package:e_tracker/pages/registration.dart/login_page.dart';
+import 'package:e_tracker/pages/registration.dart/login_page_email.dart';
 import 'package:e_tracker/pages/registration.dart/signup_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -16,5 +17,9 @@ final GoRouter appRouter = GoRouter(
     GoRoute(path: '/amunly2026', builder: (context, state) => Amunly2026page()),
     GoRoute(path: '/login', builder: (context, state) => LoginPage()),
     GoRoute(path: '/signup', builder: (context, state) => const SignupPage()),
+    GoRoute(
+      path: '/loginemail',
+      builder: (context, state) => const LoginPageEmail(),
+    ),
   ],
 );

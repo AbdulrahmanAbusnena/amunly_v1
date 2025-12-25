@@ -11,18 +11,17 @@ final buttonTheme1 = ElevatedButton.styleFrom(
 );
 
 final buttonTheme3 = ElevatedButton.styleFrom(
-  backgroundColor: const Color.fromARGB(226, 118, 168, 127),
-  foregroundColor: Colors.black,
+  minimumSize: const Size(300, 54),
+  backgroundColor: const Color.fromARGB(255, 4, 39, 100),
+  foregroundColor: Colors.white,
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
   elevation: 0.0,
-  minimumSize: const Size(330, 60),
-  // side: const BorderSide(
-  //   style: BorderStyle.solid,
-  // ),
 );
 final buttonTheme2 = ElevatedButton.styleFrom(
-  minimumSize: const Size(100, 45),
+  minimumSize: const Size(300, 54),
   backgroundColor: Colors.black,
   foregroundColor: Colors.white,
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
   elevation: 0.0,
 );
 final buttonTheme4 = ElevatedButton.styleFrom(
