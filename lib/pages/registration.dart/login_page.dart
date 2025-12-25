@@ -1,3 +1,4 @@
+import 'package:e_tracker/items/emailbutton.dart';
 import 'package:e_tracker/items/googlebutton.dart';
 import 'package:e_tracker/items/underlinedbutton.dart';
 import 'package:flutter/material.dart';
@@ -51,10 +52,65 @@ class _LoginPageState extends State<LoginPage> {
 
                     SizedBox(height: 20),
                     GoogleButton(
-                      text: 'text',
-                      ontap: () {
+                      text: 'Log In with Google',
+                      onTap: () {
                         context.go('');
                       },
+                    ),
+                    SizedBox(height: 5),
+                    SizedBox(
+                      width: 300,
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 5.0),
+                        child: Center(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              // Left horizontal line
+                              Expanded(
+                                child: Divider(
+                                  indent: 1,
+                                  endIndent: 1,
+                                  color: Colors
+                                      .grey, // Optional: customize the color
+                                  thickness:
+                                      1.0, // Optional: control the line thickness
+                                ),
+                              ),
+                              // Text in the middle
+                              Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                child: Text(
+                                  "OR",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              // Right horizontal line
+                              Expanded(
+                                child: Divider(
+                                  height: 4,
+                                  indent: 1,
+                                  endIndent: 1,
+                                  color: Colors
+                                      .grey, // Optional: customize the color
+                                  thickness:
+                                      1.0, // Optional: control the line thickness
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Emailbutton(
+                      onTap: () {
+                        context.goNamed('/');
+                      },
+                      text: 'Login with email',
                     ),
                   ],
                 ),

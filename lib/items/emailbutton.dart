@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class GoogleButton extends StatefulWidget {
+class Emailbutton extends StatefulWidget {
   final String text;
   final VoidCallback onTap;
-
-  const GoogleButton({super.key, required this.text, required this.onTap});
+  const Emailbutton({super.key, required this.onTap, required this.text});
 
   @override
-  State<GoogleButton> createState() => _GoogleButtonState();
+  State<Emailbutton> createState() => _EmailbuttonState();
 }
 
-class _GoogleButtonState extends State<GoogleButton> {
+class _EmailbuttonState extends State<Emailbutton> {
   bool isHovered = false;
-
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -24,32 +22,20 @@ class _GoogleButtonState extends State<GoogleButton> {
         onTap: widget.onTap,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 150),
-          height: 80,
-          width: 300,
+          height: 65,
+          width: 290,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(5),
             border: Border.all(
               color: isHovered ? Colors.black87 : Colors.black,
-              width: 1,
+              width: 0.5,
             ),
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Google logo (scales correctly)
-              SizedBox(
-                height: 40,
-                child: FittedBox(
-                  fit: BoxFit.contain,
-                  child: Image.asset('assets/google.png'),
-                ),
-              ),
-
-              const SizedBox(width: 10),
-
-              // Button text
               Text(
                 widget.text,
                 style: GoogleFonts.montserrat(
