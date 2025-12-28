@@ -11,5 +11,6 @@ class GetMyUser extends MyUserEvent {
   final String myUserId;
 
   const GetMyUser(this.myUserId);
+  @override
   List<Object> get props => [myUserId];
 }

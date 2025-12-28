@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'package:flutter/cupertino.dart';
 import 'package:user_repository/src/entities/entities.dart'; // Make sure this line is here
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
