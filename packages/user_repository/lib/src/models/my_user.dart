@@ -17,7 +17,7 @@ class MyUser extends Equatable {
   static const empty = MyUser(uid: '', email: '', name: '', role: '');
   MyUser copyWith({String? id, String? email, String? name, String? role}) {
     return MyUser(
-      uid: uid ?? this.uid,
+      uid: uid ?? uid,
       email: id ?? this.email,
       name: name ?? this.name,
       role: role ?? this.role,
